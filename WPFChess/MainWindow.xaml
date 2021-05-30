@@ -80,7 +80,7 @@
             <Button Background="black"/>
             <Button Background="gray"/>
         </UniformGrid>
-        <UniformGrid HorizontalAlignment="Left" Height="35" Margin="30,0,0,0" VerticalAlignment="Top" Width="650" Rows="1">
+        <UniformGrid HorizontalAlignment="Left" Height="35" Margin="30,0,0,675" VerticalAlignment="Center" Width="650" Rows="1">
             <TextBlock Text="A" Foreground="White" FontSize="22" FontWeight="Bold" TextAlignment="Center"/>
             <TextBlock Text="B" Foreground="White" FontSize="22" FontWeight="Bold" TextAlignment="Center"/>
             <TextBlock Text="C" Foreground="White" FontSize="22" FontWeight="Bold" TextAlignment="Center"/>
@@ -90,7 +90,7 @@
             <TextBlock Text="G" Foreground="White" FontSize="22" FontWeight="Bold" TextAlignment="Center"/>
             <TextBlock Text="H" Foreground="White" FontSize="22" FontWeight="Bold" TextAlignment="Center"/>
         </UniformGrid>
-        <UniformGrid HorizontalAlignment="Left" Height="650" Margin="0,35,0,0" VerticalAlignment="Top" Width="30" Columns="1">
+        <UniformGrid HorizontalAlignment="Left" Height="650" Margin="0" VerticalAlignment="Center" Width="30" Columns="1">
             <TextBlock Text="8" Foreground="White" FontSize="22" FontWeight="Bold" TextAlignment="Center" VerticalAlignment="Center"/>
             <TextBlock Text="7" Foreground="White" FontSize="22" FontWeight="Bold" TextAlignment="Center" VerticalAlignment="Center"/>
             <TextBlock Text="6" Foreground="White" FontSize="22" FontWeight="Bold" TextAlignment="Center" VerticalAlignment="Center"/>
