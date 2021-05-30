@@ -94,5 +94,23 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="King.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Queen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Rook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Bishop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Knight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pawn.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

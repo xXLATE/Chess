@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:WPFChess"
         mc:Ignorable="d"
         Title="Chess" Width="1000" Height="750" Background="#FF292929" MinWidth="1000" MinHeight="750">
-    <Grid>
-        <UniformGrid HorizontalAlignment="Left" Height="650" VerticalAlignment="Center" Width="650" Margin="30,0,0,0">
+    <Grid x:Name="ChessWindow" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <UniformGrid x:Name="ChessBoard" HorizontalAlignment="Left" Height="650" VerticalAlignment="Center" Width="650" Margin="30,0,0,0">
             <Button Background="gray"/>
             <Button Background="black"/>
             <Button Background="gray"/>
@@ -100,5 +100,38 @@
             <TextBlock Text="2" Foreground="White" FontSize="22" FontWeight="Bold" TextAlignment="Center" VerticalAlignment="Center"/>
             <TextBlock Text="1" Foreground="White" FontSize="22" FontWeight="Bold" TextAlignment="Center" VerticalAlignment="Center"/>
         </UniformGrid>
+        <Grid x:Name="ButtonsGrid" HorizontalAlignment="Left" Height="650" VerticalAlignment="Center" Width="170" Margin="720,0,0,0">
+            <Button x:Name="KingBtn" Width="75" Height="75" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Button.Background>
+                    <ImageBrush ImageSource="King.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="QueenBtn" Width="75" Height="75" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <Button.Background>
+                    <ImageBrush ImageSource="Queen.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="RookBtn" Width="75" Height="75" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,95,0,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="Rook.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="BishopBtn" Width="75" Height="75" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,95,0,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="Bishop.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="KnightBtn" Width="75" Height="75" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,190,0,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="Knight.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="PawnBtn" Width="75" Height="75" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,190,0,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="Pawn.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="ClearBtn" Width="160" Height="30" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,285,0,0" Content="Clear Board" FontSize="20" FontWeight="Bold"/>
+        </Grid>
     </Grid>
 </Window>
