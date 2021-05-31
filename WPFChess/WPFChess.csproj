@@ -112,5 +112,11 @@
   <ItemGroup>
     <Resource Include="Images\Pawn.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WPFLibrary\WPFLibrary.csproj">
+      <Project>{ec25eefd-c353-4aa6-858a-503dc4d915a9}</Project>
+      <Name>WPFLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
