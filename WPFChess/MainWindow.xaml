@@ -5,80 +5,80 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFChess"
         mc:Ignorable="d"
-        Title="Chess" Width="1000" Height="750" Background="#FF292929" MinWidth="1000" MinHeight="750">
+        Title="Chess" Width="1000" Height="750" Background="#FF292929" MinWidth="1000" MinHeight="750" Icon="Images/Rook.png">
     <Grid x:Name="ChessWindow" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center">
         <UniformGrid x:Name="ChessBoard" HorizontalAlignment="Left" Height="650" VerticalAlignment="Center" Width="650" Margin="30,0,0,0">
-            <Button Background="gray" Click="Field_Click"/>
-            <Button Background="black" Click="Field_Click"/>
-            <Button Background="gray" Click="Field_Click"/>
-            <Button Background="black" Click="Field_Click"/>
-            <Button Background="gray" Click="Field_Click"/>
-            <Button Background="black" Click="Field_Click"/>
-            <Button Background="gray" Click="Field_Click"/>
-            <Button Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_1_1" Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_1_2" Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_1_3" Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_1_4" Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_1_5" Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_1_6" Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_1_7" Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_1_8" Background="black" Click="Field_Click"/>
 
-            <Button Background="black" Click="Field_Click"/>
-            <Button Background="gray" Click="Field_Click"/>
-            <Button Background="black" Click="Field_Click"/>
-            <Button Background="gray" Click="Field_Click"/>
-            <Button Background="black" Click="Field_Click"/>
-            <Button Background="gray" Click="Field_Click"/>
-            <Button Background="black" Click="Field_Click"/>
-            <Button Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_2_1" Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_2_2" Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_2_3" Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_2_4" Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_2_5" Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_2_6" Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_2_7" Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_2_8" Background="gray" Click="Field_Click"/>
 
-            <Button Background="gray" Click="Field_Click"/>
-            <Button Background="black" Click="Field_Click"/>
-            <Button Background="gray" Click="Field_Click"/>
-            <Button Background="black" Click="Field_Click"/>
-            <Button Background="gray" Click="Field_Click"/>
-            <Button Background="black" Click="Field_Click"/>
-            <Button Background="gray" Click="Field_Click"/>
-            <Button Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_3_1" Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_3_2" Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_3_3" Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_3_4" Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_3_5" Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_3_6" Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_3_7" Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_3_8" Background="black" Click="Field_Click"/>
 
-            <Button Background="black" Click="Field_Click"/>
-            <Button Background="gray" Click="Field_Click"/>
-            <Button Background="black" Click="Field_Click"/>
-            <Button Background="gray" Click="Field_Click"/>
-            <Button Background="black" Click="Field_Click"/>
-            <Button Background="gray" Click="Field_Click"/>
-            <Button Background="black" Click="Field_Click"/>
-            <Button Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_4_1" Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_4_2" Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_4_3" Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_4_4" Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_4_5" Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_4_6" Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_4_7" Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_4_8" Background="gray" Click="Field_Click"/>
 
-            <Button Background="gray" Click="Field_Click"/>
-            <Button Background="black" Click="Field_Click"/>
-            <Button Background="gray" Click="Field_Click"/>
-            <Button Background="black" Click="Field_Click"/>
-            <Button Background="gray" Click="Field_Click"/>
-            <Button Background="black" Click="Field_Click"/>
-            <Button Background="gray" Click="Field_Click"/>
-            <Button Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_5_1" Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_5_2" Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_5_3" Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_5_4" Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_5_5" Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_5_6" Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_5_7" Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_5_8" Background="black" Click="Field_Click"/>
 
-            <Button Background="black" Click="Field_Click"/>
-            <Button Background="gray" Click="Field_Click"/>
-            <Button Background="black" Click="Field_Click"/>
-            <Button Background="gray" Click="Field_Click"/>
-            <Button Background="black" Click="Field_Click"/>
-            <Button Background="gray" Click="Field_Click"/>
-            <Button Background="black" Click="Field_Click"/>
-            <Button Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_6_1" Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_6_2" Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_6_3" Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_6_4" Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_6_5" Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_6_6" Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_6_7" Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_6_8" Background="gray" Click="Field_Click"/>
 
-            <Button Background="gray" Click="Field_Click"/>
-            <Button Background="black" Click="Field_Click"/>
-            <Button Background="gray" Click="Field_Click"/>
-            <Button Background="black" Click="Field_Click"/>
-            <Button Background="gray" Click="Field_Click"/>
-            <Button Background="black" Click="Field_Click"/>
-            <Button Background="gray" Click="Field_Click"/>
-            <Button Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_7_1" Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_7_2" Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_7_3" Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_7_4" Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_7_5" Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_7_6" Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_7_7" Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_7_8" Background="black" Click="Field_Click"/>
 
-            <Button Background="black" Click="Field_Click"/>
-            <Button Background="gray" Click="Field_Click"/>
-            <Button Background="black" Click="Field_Click"/>
-            <Button Background="gray" Click="Field_Click"/>
-            <Button Background="black" Click="Field_Click"/>
-            <Button Background="gray" Click="Field_Click"/>
-            <Button Background="black" Click="Field_Click"/>
-            <Button Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_8_1" Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_8_2" Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_8_3" Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_8_4" Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_8_5" Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_8_6" Background="gray" Click="Field_Click"/>
+            <Button x:Name="btn_8_7" Background="black" Click="Field_Click"/>
+            <Button x:Name="btn_8_8" Background="gray" Click="Field_Click"/>
         </UniformGrid>
         <UniformGrid HorizontalAlignment="Left" Height="35" Margin="30,0,0,675" VerticalAlignment="Center" Width="650" Rows="1">
             <TextBlock Text="A" Foreground="White" FontSize="22" FontWeight="Bold" TextAlignment="Center"/>
@@ -101,9 +101,6 @@
             <TextBlock Text="1" Foreground="White" FontSize="22" FontWeight="Bold" TextAlignment="Center" VerticalAlignment="Center"/>
         </UniformGrid>
         <Grid x:Name="ButtonsGrid" HorizontalAlignment="Left" Height="650" VerticalAlignment="Center" Width="170" Margin="720,0,0,0">
-            <Grid.Background>
-                <ImageBrush/>
-            </Grid.Background>
             <Button x:Name="KingBtn" Width="75" Height="75" HorizontalAlignment="Left" VerticalAlignment="Top" Click="KingBtn_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="Images/King.png"/>
@@ -134,7 +131,8 @@
                     <ImageBrush ImageSource="Images/Pawn.png"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="ClearBtn" Width="160" Height="30" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,285,0,0" Content="Clear Board" FontSize="20" FontWeight="Bold" Click="ClearBtn_Click"/>
+            <Button x:Name="ClearBtn" Width="160" Height="30" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,355,0,0" Content="Clear Board" FontSize="20" FontWeight="Bold" Click="ClearBtn_Click"/>
+            <TextBox HorizontalAlignment="Center" Height="50" Margin="0,285,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Background="#FF1B1B1B" BorderBrush="#FF515151" Foreground="White" TextAlignment="Center" IsReadOnly="True"/>
         </Grid>
     </Grid>
 </Window>

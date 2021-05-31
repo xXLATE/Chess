@@ -71,9 +71,8 @@ namespace WPFChess
 
         private void Field_Click(object sender, RoutedEventArgs e)
         {
-            Control control = (Control)sender;
             Button button = (Button)sender;
-            button.Content = new Rectangle { Fill = brush, Width=75, Height=75};
+            button.Content = new Rectangle { Fill = brush, Width=75, Height=75 };
         }
     }
 }
