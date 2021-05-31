@@ -95,22 +95,22 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="King.png" />
+    <Resource Include="Images\King.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Queen.png" />
+    <Resource Include="Images\Queen.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Rook.png" />
+    <Resource Include="Images\Rook.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Bishop.png" />
+    <Resource Include="Images\Bishop.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Knight.png" />
+    <Resource Include="Images\Knight.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Pawn.png" />
+    <Resource Include="Images\Pawn.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

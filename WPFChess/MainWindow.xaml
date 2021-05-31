@@ -8,77 +8,77 @@
         Title="Chess" Width="1000" Height="750" Background="#FF292929" MinWidth="1000" MinHeight="750">
     <Grid x:Name="ChessWindow" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center">
         <UniformGrid x:Name="ChessBoard" HorizontalAlignment="Left" Height="650" VerticalAlignment="Center" Width="650" Margin="30,0,0,0">
-            <Button Background="gray"/>
-            <Button Background="black"/>
-            <Button Background="gray"/>
-            <Button Background="black"/>
-            <Button Background="gray"/>
-            <Button Background="black"/>
-            <Button Background="gray"/>
-            <Button Background="black"/>
+            <Button Background="gray" Click="Field_Click"/>
+            <Button Background="black" Click="Field_Click"/>
+            <Button Background="gray" Click="Field_Click"/>
+            <Button Background="black" Click="Field_Click"/>
+            <Button Background="gray" Click="Field_Click"/>
+            <Button Background="black" Click="Field_Click"/>
+            <Button Background="gray" Click="Field_Click"/>
+            <Button Background="black" Click="Field_Click"/>
 
-            <Button Background="black"/>
-            <Button Background="gray"/>
-            <Button Background="black"/>
-            <Button Background="gray"/>
-            <Button Background="black"/>
-            <Button Background="gray"/>
-            <Button Background="black"/>
-            <Button Background="gray"/>
+            <Button Background="black" Click="Field_Click"/>
+            <Button Background="gray" Click="Field_Click"/>
+            <Button Background="black" Click="Field_Click"/>
+            <Button Background="gray" Click="Field_Click"/>
+            <Button Background="black" Click="Field_Click"/>
+            <Button Background="gray" Click="Field_Click"/>
+            <Button Background="black" Click="Field_Click"/>
+            <Button Background="gray" Click="Field_Click"/>
 
-            <Button Background="gray"/>
-            <Button Background="black"/>
-            <Button Background="gray"/>
-            <Button Background="black"/>
-            <Button Background="gray"/>
-            <Button Background="black"/>
-            <Button Background="gray"/>
-            <Button Background="black"/>
+            <Button Background="gray" Click="Field_Click"/>
+            <Button Background="black" Click="Field_Click"/>
+            <Button Background="gray" Click="Field_Click"/>
+            <Button Background="black" Click="Field_Click"/>
+            <Button Background="gray" Click="Field_Click"/>
+            <Button Background="black" Click="Field_Click"/>
+            <Button Background="gray" Click="Field_Click"/>
+            <Button Background="black" Click="Field_Click"/>
 
-            <Button Background="black"/>
-            <Button Background="gray"/>
-            <Button Background="black"/>
-            <Button Background="gray"/>
-            <Button Background="black"/>
-            <Button Background="gray"/>
-            <Button Background="black"/>
-            <Button Background="gray"/>
+            <Button Background="black" Click="Field_Click"/>
+            <Button Background="gray" Click="Field_Click"/>
+            <Button Background="black" Click="Field_Click"/>
+            <Button Background="gray" Click="Field_Click"/>
+            <Button Background="black" Click="Field_Click"/>
+            <Button Background="gray" Click="Field_Click"/>
+            <Button Background="black" Click="Field_Click"/>
+            <Button Background="gray" Click="Field_Click"/>
 
-            <Button Background="gray"/>
-            <Button Background="black"/>
-            <Button Background="gray"/>
-            <Button Background="black"/>
-            <Button Background="gray"/>
-            <Button Background="black"/>
-            <Button Background="gray"/>
-            <Button Background="black"/>
+            <Button Background="gray" Click="Field_Click"/>
+            <Button Background="black" Click="Field_Click"/>
+            <Button Background="gray" Click="Field_Click"/>
+            <Button Background="black" Click="Field_Click"/>
+            <Button Background="gray" Click="Field_Click"/>
+            <Button Background="black" Click="Field_Click"/>
+            <Button Background="gray" Click="Field_Click"/>
+            <Button Background="black" Click="Field_Click"/>
 
-            <Button Background="black"/>
-            <Button Background="gray"/>
-            <Button Background="black"/>
-            <Button Background="gray"/>
-            <Button Background="black"/>
-            <Button Background="gray"/>
-            <Button Background="black"/>
-            <Button Background="gray"/>
+            <Button Background="black" Click="Field_Click"/>
+            <Button Background="gray" Click="Field_Click"/>
+            <Button Background="black" Click="Field_Click"/>
+            <Button Background="gray" Click="Field_Click"/>
+            <Button Background="black" Click="Field_Click"/>
+            <Button Background="gray" Click="Field_Click"/>
+            <Button Background="black" Click="Field_Click"/>
+            <Button Background="gray" Click="Field_Click"/>
 
-            <Button Background="gray"/>
-            <Button Background="black"/>
-            <Button Background="gray"/>
-            <Button Background="black"/>
-            <Button Background="gray"/>
-            <Button Background="black"/>
-            <Button Background="gray"/>
-            <Button Background="black"/>
+            <Button Background="gray" Click="Field_Click"/>
+            <Button Background="black" Click="Field_Click"/>
+            <Button Background="gray" Click="Field_Click"/>
+            <Button Background="black" Click="Field_Click"/>
+            <Button Background="gray" Click="Field_Click"/>
+            <Button Background="black" Click="Field_Click"/>
+            <Button Background="gray" Click="Field_Click"/>
+            <Button Background="black" Click="Field_Click"/>
 
-            <Button Background="black"/>
-            <Button Background="gray"/>
-            <Button Background="black"/>
-            <Button Background="gray"/>
-            <Button Background="black"/>
-            <Button Background="gray"/>
-            <Button Background="black"/>
-            <Button Background="gray"/>
+            <Button Background="black" Click="Field_Click"/>
+            <Button Background="gray" Click="Field_Click"/>
+            <Button Background="black" Click="Field_Click"/>
+            <Button Background="gray" Click="Field_Click"/>
+            <Button Background="black" Click="Field_Click"/>
+            <Button Background="gray" Click="Field_Click"/>
+            <Button Background="black" Click="Field_Click"/>
+            <Button Background="gray" Click="Field_Click"/>
         </UniformGrid>
         <UniformGrid HorizontalAlignment="Left" Height="35" Margin="30,0,0,675" VerticalAlignment="Center" Width="650" Rows="1">
             <TextBlock Text="A" Foreground="White" FontSize="22" FontWeight="Bold" TextAlignment="Center"/>
@@ -101,37 +101,40 @@
             <TextBlock Text="1" Foreground="White" FontSize="22" FontWeight="Bold" TextAlignment="Center" VerticalAlignment="Center"/>
         </UniformGrid>
         <Grid x:Name="ButtonsGrid" HorizontalAlignment="Left" Height="650" VerticalAlignment="Center" Width="170" Margin="720,0,0,0">
-            <Button x:Name="KingBtn" Width="75" Height="75" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Grid.Background>
+                <ImageBrush/>
+            </Grid.Background>
+            <Button x:Name="KingBtn" Width="75" Height="75" HorizontalAlignment="Left" VerticalAlignment="Top" Click="KingBtn_Click">
                 <Button.Background>
-                    <ImageBrush ImageSource="King.png"/>
+                    <ImageBrush ImageSource="Images/King.png"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="QueenBtn" Width="75" Height="75" HorizontalAlignment="Right" VerticalAlignment="Top">
+            <Button x:Name="QueenBtn" Width="75" Height="75" HorizontalAlignment="Right" VerticalAlignment="Top" Click="QueenBtn_Click">
                 <Button.Background>
-                    <ImageBrush ImageSource="Queen.png"/>
+                    <ImageBrush ImageSource="Images/Queen.png"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="RookBtn" Width="75" Height="75" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,95,0,0">
+            <Button x:Name="RookBtn" Width="75" Height="75" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,95,0,0" Click="RookBtn_Click">
                 <Button.Background>
-                    <ImageBrush ImageSource="Rook.png"/>
+                    <ImageBrush ImageSource="Images/Rook.png"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="BishopBtn" Width="75" Height="75" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,95,0,0">
+            <Button x:Name="BishopBtn" Width="75" Height="75" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,95,0,0" Click="BishopBtn_Click">
                 <Button.Background>
-                    <ImageBrush ImageSource="Bishop.png"/>
+                    <ImageBrush ImageSource="Images/Bishop.png"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="KnightBtn" Width="75" Height="75" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,190,0,0">
+            <Button x:Name="KnightBtn" Width="75" Height="75" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,190,0,0" Click="KnightBtn_Click">
                 <Button.Background>
-                    <ImageBrush ImageSource="Knight.png"/>
+                    <ImageBrush ImageSource="Images/Knight.png"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="PawnBtn" Width="75" Height="75" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,190,0,0">
+            <Button x:Name="PawnBtn" Width="75" Height="75" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,190,0,0" Click="PawnBtn_Click">
                 <Button.Background>
-                    <ImageBrush ImageSource="Pawn.png"/>
+                    <ImageBrush ImageSource="Images/Pawn.png"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="ClearBtn" Width="160" Height="30" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,285,0,0" Content="Clear Board" FontSize="20" FontWeight="Bold"/>
+            <Button x:Name="ClearBtn" Width="160" Height="30" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,285,0,0" Content="Clear Board" FontSize="20" FontWeight="Bold" Click="ClearBtn_Click"/>
         </Grid>
     </Grid>
 </Window>
