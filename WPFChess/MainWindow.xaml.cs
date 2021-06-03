@@ -25,6 +25,7 @@ namespace WPFChess
         protected ImageBrush brush;
         protected string SelectedFigure;
         protected List<Button> BoardRectangles;
+        private Piece piece;
 
         public MainWindow()
         {
@@ -78,17 +79,38 @@ namespace WPFChess
         {
             foreach (Button boardBtn in BoardRectangles)
                 boardBtn.Content = null;
+            ErrorBox.Clear();
         }
 
         private void Field_Click(object sender, RoutedEventArgs e)
         {
             Button button = (Button)sender;
-            button.Content = new Rectangle { Fill = brush, Width=75, Height=75, Name=SelectedFigure };
-            BoardRectangles.Add(button);
 
             string btnName = button.Name;
             var btnNames = btnName.Split('_');
-            //PieceMaker.Make(SelectedFigure, Convert.ToInt32(btnNames[1]), Convert.ToInt32(btnNames[2]));
+
+            if (button.Content == null && SelectedFigure != "")
+            {
+                ClearBtn_Click(null, null);
+
+                button.Content = new Rectangle { Fill = brush, Width = 75, Height = 75, Name = SelectedFigure };
+                BoardRectangles.Add(button);
+                                
+                piece = PieceMaker.Make(SelectedFigure, Convert.ToInt32(btnNames[2]), Convert.ToInt32(btnNames[1]));
+
+                SelectedFigure = "";
+            }
+            else if (piece.PreMove(Convert.ToInt32(btnNames[2]), Convert.ToInt32(btnNames[1])))
+            {
+                ClearBtn_Click(null, null);
+
+                button.Content = new Rectangle { Fill = brush, Width = 75, Height = 75, Name = SelectedFigure };
+                BoardRectangles.Add(button);
+            }
+            else if (!piece.PreMove(Convert.ToInt32(btnNames[2]), Convert.ToInt32(btnNames[1])))
+            {
+                ErrorBox.Text = "This move not by the rules!";
+            }
         }
     }
 }

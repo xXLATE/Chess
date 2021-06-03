@@ -132,7 +132,7 @@
                 </Button.Background>
             </Button>
             <Button x:Name="ClearBtn" Width="160" Height="30" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,355,0,0" Content="Clear Board" FontSize="20" FontWeight="Bold" Click="ClearBtn_Click"/>
-            <TextBox x:Name="ErrorBox" HorizontalAlignment="Center" Height="50" Margin="0,285,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Background="#FF1B1B1B" BorderBrush="#FF515151" Foreground="White" TextAlignment="Center" IsReadOnly="True"/>
+            <TextBox x:Name="ErrorBox" HorizontalAlignment="Center" Height="50" Margin="0,285,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Background="#FF1B1B1B" BorderBrush="#FF515151" Foreground="White" TextAlignment="Center" IsReadOnly="True" FontSize="18"/>
         </Grid>
     </Grid>
 </Window>
